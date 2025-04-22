@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "norse";
+  src: url("./Norse-Bold.otf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main {
+  display: flex;
+}
+
+.image {
+  background-image: url(./danny-lines-TTRNdWfY8TY-unsplash.jpg);
+  width: 40vw;
+  background-size: cover;
+
+  padding-top: 14.5vh;
+}
+
+.logo {
+  padding: 2vh;
+  background-color: rgba(13, 9, 11, 0.66);
+  justify-content: center;
+  align-items: center;
+  font-family: "norse";
+  font-size: 50px;
+  color: #e5e7eb;
+  max-height: 40vh;
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.top,
+.bottom {
+  background-color: #ece3ff;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5vh 5vw;
+}
+
+.middle {
+  font-size: 1.5em;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  font-size: 30px;
+  border: 2px solid #e5e7eb;
+  border-radius: 5px;
+}
+input:focus {
+  outline: 1px solid rgb(0, 204, 255);
+  border: 1px solid rgb(0, 204, 255);
+  box-shadow: 1px 1px 10px;
+}
+
+input:invalid {
+  border: 1px solid red;
+  outline: 1px solid red;
+}
+
+form {
+  display: flex;
+
+  gap: 10.5rem;
+}
+.left-middle {
+  display: flex;
+  flex-direction: column;
+}
+.right-middle {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #596d48;
+  color: rgb(255, 255, 255);
+  padding: 8px 25px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  box-shadow: 5px inset grey;
+  margin-bottom: 15px;
+}
+a {
+  color: #596d48;
+}
+.bottom {
+  font-size: 25px;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  height: fit-content;
+}
